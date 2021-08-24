@@ -1,0 +1,32 @@
+.talking {
+  background: #f8f9fa;
+  text-align: center;
+  padding: 60px 0;
+
+  .text {
+    margin-bottom: 40px;
+  }
+
+  .people {
+    display: flex;
+    margin: 0 10%;
+    gap: 50px;
+    justify-content: space-around;
+    text-align: center;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+
+    h2 {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+    img {
+      width: 50%;
+      height: 50%;
+      margin-bottom: 10px;
+      background-position: center;
+      border-radius: 100%;
+    }
+  }
+}

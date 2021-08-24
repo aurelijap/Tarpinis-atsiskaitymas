@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  background: lightgrey;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  background-color: lightgrey;
+  padding: 20px;
+  li {
+    background: #007bff;
+    list-style-type: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+}
+
+h2 {
+  font-weight: bold;
+}
+.signup,
+.bottomsignup {
+  background-image: url('../../img/bg-masthead.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+  padding: 150px 20px;
+  text-align: center;
+  .up,
+  .bottomup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    border-radius: 2px;
+    gap: 10px;
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+
+    #email {
+      padding: 5px 8px;
+      width: 350px;
+      border-radius: 4px;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+    .button,
+    .bottombutton {
+      background: #007bff;
+      padding: 7px 20px;
+      color: white;
+      border-radius: 4px;
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.showcase {
+  background: #ffffff;
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+    .box {
+      padding: 0 50px;
+      @media (max-width: 600px) {
+        padding: 30px;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+    }
+    .fullyimg,
+    .customimg {
+      order: 1;
+      @media (max-width: 600px) {
+        order: 0;
+      }
+    }
+  }
+  img {
+    display: block;
+  }
+}
+
+p {
+  font-weight: 300;
+  line-height: 25px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.bottomsignup {
+  padding: 100px 0;
+  @media (max-width: 600px) {
+    padding: 100px 30px;
+  }
+}

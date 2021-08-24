@@ -1,0 +1,17 @@
+.icons {
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
+  padding: 100px 10%;
+  text-align: center;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+  i {
+    color: #007bff;
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+}
